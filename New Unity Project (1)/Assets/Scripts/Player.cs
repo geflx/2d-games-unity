@@ -35,6 +35,9 @@ public class Player : MonoBehaviour
 
         //healthDisplay.text = "HP: " + health.ToString();
 
+    
+        animator.SetBool("doubleJump", false);
+
         if(grounded){
             animator.SetBool("isGrounded", true);
             extraJumps = extraJumpsValue;
@@ -43,6 +46,8 @@ public class Player : MonoBehaviour
         }
 
         if(Input.GetKeyDown("space") && extraJumps>0){
+                
+                animator.SetBool("doubleJump", true);
 
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
