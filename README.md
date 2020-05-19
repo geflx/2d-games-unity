@@ -9,7 +9,7 @@ Para tomar início ao desenvolvimento de jogos em Unity (C#), foi desenvolvido u
 - obstáculos em três posições diferentes; 
 - placares indicadores de vida e Score;
 
-<img src="readme_attributes/2drun_normal.png" width="100" height="200" >
+<img src="readme_attributes/2drun_normal.png" width="300" height="720" >
 
 
 
