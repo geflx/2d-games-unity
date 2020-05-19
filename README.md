@@ -9,6 +9,8 @@ At the beggining of game development in Unity (C#), it was developed an Endless 
 - Three different positions obstacles;
 - Score and Health indicators.
 
+* Runner Sprites from "naruto saikyou ninja daikesshu 2"
+
 #### Development Game Screenshots
 
 <table>
