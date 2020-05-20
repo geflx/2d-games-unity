@@ -12,6 +12,8 @@ public class BonfireScript : MonoBehaviour{
     public GameObject Player;
   //  public Animator animator;
 
+    public bool touched = false; //Avoid burning player again on collision
+
     void Start(){
         
        // animator.SetBool("onFire", true);
@@ -26,15 +28,20 @@ public class BonfireScript : MonoBehaviour{
         }
 
     }
-    private void OnCollisionEnter2D(Collision2D collision){
+
+    void OnCollisionEnter2D(Collision2D collision){
 
         if(collision.collider.tag == "Player"){
             Destroy(gameObject);
-            Debug.Log("Burned player!! ");
-            Player.GetComponent<Health>().health -=1;
+            Debug.Log("Burn Player, burn!");
+            if(!touched){
+                Player.GetComponent<Health>().health -=1;
+            }else{
+                Debug.Log("Tried to burn player again, but DENIED!");
+            }
+            touched = true;
         }
 
-      
     } 
     
 }
