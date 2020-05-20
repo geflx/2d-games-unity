@@ -6,24 +6,35 @@ public class BonfireScript : MonoBehaviour{
 
     
     private BoxCollider2D bc;
-    bool onFire;
-   
-    public Animator animator;
+    public bool onFire;
+    
+    public GameObject bonfire;
+    public GameObject Player;
+  //  public Animator animator;
 
     void Start(){
         
-        animator.SetBool("onFire", true);
+       // animator.SetBool("onFire", true);
+        Player = GameObject.Find("Player");
         onFire = true;
 
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.tag == "Player" && onFire){
 
-            animator.SetBool("onFire", false);
-            onFire = false;
-            other.GetComponent<Player>().health -=1;
+    void Update(){
+        if(!onFire){
+           // animator.SetBool("onFire", false);
         }
+
     }
+    private void OnCollisionEnter2D(Collision2D collision){
+
+        if(collision.collider.tag == "Player"){
+            Destroy(gameObject);
+            Debug.Log("Burned player!! ");
+            Player.GetComponent<Health>().health -=1;
+        }
+
+      
+    } 
     
 }

@@ -12,16 +12,10 @@ public class GroundCheck : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision){
-        Debug.Log("Toquei!");
+
         if(collision.collider.tag == "Ground"){
 
             Player.GetComponent<Player>().grounded = true;
-
-        }else if(collision.collider.tag == "Fire"){
-            
-
-            Player.GetComponent<Player>().grounded = true;
-            Player.GetComponent<Player>().health -=1;
 
         }
     }

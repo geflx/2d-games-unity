@@ -6,12 +6,12 @@ public class Player : MonoBehaviour
 {
 
    [Header("Player Info.")]
-    public float health;
     public float moveSpeed;
     
     [Header("Components")]
     public Rigidbody2D rb;
     public Animator animator;
+    
 
     [Header("Jump Info.")]
     public bool grounded = false;
