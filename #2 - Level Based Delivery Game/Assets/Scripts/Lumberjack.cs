@@ -18,12 +18,13 @@ public class Lumberjack : MonoBehaviour
     void Update(){
         playerDistance = Mathf.Abs(Player.transform.position.x - gameObject.transform.position.x);
 
-        Debug.Log(playerDistance);
-
-        if(playerDistance < 5f){
+        if(playerDistance <= 11.5f){
             run = true;
         }
         
+        if(Player.transform.position.x - gameObject.transform.position.x  > 20 ){
+            Destroy(gameObject);
+        }
         Move();
     }
 

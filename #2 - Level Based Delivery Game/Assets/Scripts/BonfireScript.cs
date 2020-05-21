@@ -29,9 +29,9 @@ public class BonfireScript : MonoBehaviour{
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision){
-
-        if(collision.collider.tag == "Player"){
+  
+     void OnTriggerEnter2D(Collider2D collision){
+        if(collision.gameObject.tag == "Player"){
             Destroy(gameObject);
             Debug.Log("Burn Player, burn!");
             if(!touched){
@@ -41,7 +41,5 @@ public class BonfireScript : MonoBehaviour{
             }
             touched = true;
         }
-
-    } 
-    
+    }
 }
