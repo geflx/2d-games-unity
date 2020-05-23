@@ -10,7 +10,6 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [Header("Player Characteristics")]
-    public float health = 3;
     public float moveSpeed = 5f;
 
     [Header("Components")]
@@ -23,22 +22,17 @@ public class Player : MonoBehaviour
     public float extraJumpsValue = 1;
     public float extraJumps;
 
-    public Text healthDisplay;
     public GameObject gameOver;
 
 
-
     void Start(){
-
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
     void Update(){
 
-        healthDisplay.text = "HP: " + health.ToString();
-
-        if(health <= 0){ //Dead!!
+        if(GetComponent<Health>().health <= 0){ //Dead!!
            gameOver.SetActive(true);
            Destroy(gameObject);
            Destroy(GameObject.Find("Spawner").GetComponent<Spawner>());

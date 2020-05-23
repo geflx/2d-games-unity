@@ -97,9 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speedLeftLimit: 1
-  speedRightLimit: 7
-  crazyKnifePercentage: 10
+  speed: 5
 --- !u!61 &2490182190172783561
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour
     }
     private void Update(){
         if(keepCounting){
-            scoreDisplay.text = "Score: " + score.ToString();
+            scoreDisplay.text = score.ToString();
         }
     }
     void OnTriggerEnter2D(Collider2D other){        

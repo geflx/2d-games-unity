@@ -4,42 +4,28 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public int damage = 1;
-    public float speedLeftLimit;
-    public float speedRightLimit;
-    private float mySpeed;
+    public int damage;
+    public float speed;
 
-    private float crazyKnife;
-    public float crazyKnifePercentage; //set this in Editor
     Vector2 startPos;
 
     private void Start(){
-        crazyKnife = Random.Range(0,100);
-        if(crazyKnife <= (crazyKnifePercentage)){
-            mySpeed = 20;
-        }else{
-            mySpeed = Random.Range(speedRightLimit, speedRightLimit);
-        }
         startPos = transform.position;
-
-        
     }
     private void Update(){
-        transform.Translate(Vector2.left * mySpeed * Time.deltaTime);
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
 
         if( (transform.position.x - startPos.x)*(transform.position.x - startPos.x) >=60){
-            Destroy(gameObject);
+            Destroy(gameObject); // ! Destroying Obstacle after a considerate distance from Player;
         }
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        Debug.Log("Bati!");
-        Destroy(gameObject); // Destroy on contact
+
+        Destroy(gameObject); // * Destroy Obstacle when touch Player;
+
         if(other.CompareTag("Player")){
-            Debug.Log("Player!!");
-            other.GetComponent<Player>().health -= damage;
-        }else{
-            Debug.Log("Outra coisa!");
+            other.GetComponent<Health>().health -= damage;
         }
     }
 }
