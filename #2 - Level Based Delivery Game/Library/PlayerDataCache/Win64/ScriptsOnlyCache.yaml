@@ -7,7 +7,10 @@ ScriptsOnlyBuild:
     - Health
     - Lumberjack
     - MainMenu
+    - PauseMenu
     - Player
+    - PowerUp
+    - PowerUpScore
     - ProgressBar
     - TouchCheck
     Cinemachine.dll:
@@ -94,28 +97,46 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 12318}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12786}
+      Script: {instanceID: 12320}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 12610}
     - Class: 114
-      Script: {instanceID: 13562}
+      Script: {instanceID: 12790}
     - Class: 114
-      Script: {instanceID: 13942}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 14182}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 14552}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 14558}
+      Script: {instanceID: 13498}
     - Class: 114
-      Script: {instanceID: 14660}
+      Script: {instanceID: 13568}
+    - Class: 114
+      Script: {instanceID: 13838}
+    - Class: 114
+      Script: {instanceID: 13948}
+    - Class: 114
+      Script: {instanceID: 14070}
+    - Class: 114
+      Script: {instanceID: 14190}
+    - Class: 114
+      Script: {instanceID: 14560}
+    - Class: 114
+      Script: {instanceID: 14566}
+    - Class: 114
+      Script: {instanceID: 14620}
+    - Class: 114
+      Script: {instanceID: 14668}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -161,25 +182,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 12280}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12342}
+      Script: {instanceID: 12344}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 13456}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 13476}
+      Script: {instanceID: 13482}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 13838}
     - Class: 114
-      Script: {instanceID: 13942}
+      Script: {instanceID: 13948}
     - Class: 114
-      Script: {instanceID: 14250}
+      Script: {instanceID: 14258}
     - Class: 114
-      Script: {instanceID: 14430}
+      Script: {instanceID: 14438}
     - Class: 114
-      Script: {instanceID: 14612}
+      Script: {instanceID: 14620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -463,6 +484,12 @@ ScriptsOnlyBuild:
     className: CinemachinePostProcessing
   - hash:
       serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -563,6 +590,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePOV
+  - hash:
+      serializedVersion: 2
+      Hash: c5bbf544e94ecf754c0292c2cc63e108
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PowerUpScore
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -973,6 +1006,12 @@ ScriptsOnlyBuild:
     className: VertexShakeB
   - hash:
       serializedVersion: 2
+      Hash: f2fc74f1d56953c33f5156031da27104
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PowerUp
+  - hash:
+      serializedVersion: 2
       Hash: 5bb0c23ac2810973880e592724a69354
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1093,7 +1132,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 2728a617e4287482de46bb2b80d82cfc
+      Hash: 7463afa4fd910903bec1dd7f2ec7e2e1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player

@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
    [Header("Player Info.")]
     public float moveSpeed;
+    public int power = 0;
     
     [Header("Components")]
     public Rigidbody2D rb;
@@ -22,9 +23,6 @@ public class Player : MonoBehaviour
     [Header("Move Info.")]
     private float moveInput;
 
-
-    //public Text healthDisplay;
-
     void Start(){
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -32,9 +30,6 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-
-        //healthDisplay.text = "HP: " + health.ToString();
-
     
         animator.SetBool("doubleJump", false);
 
