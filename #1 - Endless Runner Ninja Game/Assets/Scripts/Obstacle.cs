@@ -15,16 +15,14 @@ public class Obstacle : MonoBehaviour
     private void Update(){
         transform.Translate(Vector2.left * speed * Time.deltaTime);
 
-        if( (transform.position.x - startPos.x)*(transform.position.x - startPos.x) >=60){
+        if( (transform.position.x - startPos.x)*(transform.position.x - startPos.x) >=80){
             Destroy(gameObject); // ! Destroying Obstacle after a considerate distance from Player;
         }
     }
 
     void OnTriggerEnter2D(Collider2D other){
-
-        Destroy(gameObject); // * Destroy Obstacle when touch Player;
-
         if(other.CompareTag("Player")){
+            Destroy(gameObject); // * Destroy Obstacle when touch Player;
             other.GetComponent<Health>().health -= damage;
         }
     }

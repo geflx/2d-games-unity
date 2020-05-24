@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 {
     [Header("Player Characteristics")]
     public float moveSpeed = 5f;
+    public int kamaboko = 0;
 
     [Header("Components")]
     public Rigidbody2D rb;
@@ -36,7 +37,8 @@ public class Player : MonoBehaviour
            gameOver.SetActive(true);
            Destroy(gameObject);
            Destroy(GameObject.Find("Spawner").GetComponent<Spawner>());
-          GameObject.Find("Score Manager").GetComponent<ScoreManager>().keepCounting = false;
+           GameObject.Find("Score Manager").GetComponent<ScoreManager>().keepCounting = false;
+           GameObject.Find("Kamaboko Manager").GetComponent<KamabokoManager>().keepCounting = false;
         }
 
         if(grounded){
