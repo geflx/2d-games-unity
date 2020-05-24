@@ -53,12 +53,14 @@ public class Player : MonoBehaviour
 
         if(CrossPlatformInputManager.GetButtonDown("Down") && grounded==false){
             extraJumps=0;
+            animator.SetBool("goDown",true);
             rb.velocity = Vector2.down * 2*jumpForce;
         }
         if(!grounded){
             animator.SetBool("onAir",true);
         }else{
             animator.SetBool("onAir",false);
+            animator.SetBool("goDown",false);
         }
     }
 
