@@ -17,7 +17,9 @@ public class Spawner : MonoBehaviour
     public int minIndexKamaboko;
     public int maxIndexKamaboko;
 
-
+    public int minIndexShuriken;
+    public int maxIndexShuriken;
+    
     private void Update(){
         if(timeBtwSpawn <= 0){
 
