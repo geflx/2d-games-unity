@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
 
     public GameObject gameOver;
 
+    private int waitCycles = 30;
+
 
     void Start(){
         rb = GetComponent<Rigidbody2D>();
@@ -33,12 +35,19 @@ public class Player : MonoBehaviour
 
     void Update(){
 
-        if(GetComponent<Health>().health <= 0){ //Dead!!
+        if(GetComponent<Health>().health <= 0){ // Dead in Combat
+
            gameOver.SetActive(true);
-           Destroy(gameObject);
+
            Destroy(GameObject.Find("Spawner").GetComponent<Spawner>());
+
            GameObject.Find("Score Manager").GetComponent<ScoreManager>().keepCounting = false;
            GameObject.Find("Kamaboko Manager").GetComponent<KamabokoManager>().keepCounting = false;
+        
+            if(waitCycles > 0)
+                --waitCycles;
+            else
+                Destroy(gameObject);
         }
 
         if(grounded){

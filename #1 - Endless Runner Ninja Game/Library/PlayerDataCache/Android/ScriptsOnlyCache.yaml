@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - DestroyItself
     - EnemyAttack
     - EnemyEyes
+    - EnemySpawner
     - Grounded
     - Health
     - KamabokoManager
@@ -23,6 +24,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -30,8 +33,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -133,6 +138,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14226}
     - Class: 114
       Script: {instanceID: 14296}
+    - Class: 114
+      Script: {instanceID: 45536}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -482,7 +489,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: de3b64f1e17b5aeaad8f063456525030
+      Hash: 5e128058274d2438d267f56af241a4d2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Health
@@ -500,7 +507,7 @@ ScriptsOnlyBuild:
     className: MobileControlRig
   - hash:
       serializedVersion: 2
-      Hash: 77f24ad90405bba346eaab5c1aacc3e8
+      Hash: a9e0b6483c707af208397504a46716bf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyAttack
@@ -780,8 +787,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 96f4d91945010a4a0ad090e51354290f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemySpawner
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   playerPath: C:/Users/Gabriel/Documents/Github/Unity2DGames/#1 - Endless Runner
-    Ninja Game/Versions/Test.apk
+    Ninja Game/Versions/V1.3.apk
