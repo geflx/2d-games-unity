@@ -7,7 +7,8 @@ using UnityEngine.UI; //important
 public class Health : MonoBehaviour
 {
 
-    public int health = 3;
+    public int health;
+    public int healthLimit;
     public int numOfHearts;
 
     public Image[] hearts;
@@ -16,8 +17,7 @@ public class Health : MonoBehaviour
 
     private int lastHealth = 3;
 
-    public AudioSource audio1;
-    public AudioSource audio2;
+    public AudioSource audio1, audio2, audio3;
  
 
     void Start(){
@@ -25,9 +25,14 @@ public class Health : MonoBehaviour
         AudioSource[] aSources = GetComponents<AudioSource>();
         audio1 = aSources[0];
         audio2 = aSources[1];
+        audio3 = aSources[2];
 
     }
     void Update(){
+
+        if(health > healthLimit){
+            health = healthLimit;
+        }
 
         if(lastHealth > health){
 

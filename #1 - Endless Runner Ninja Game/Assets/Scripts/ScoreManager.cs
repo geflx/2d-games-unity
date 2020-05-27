@@ -16,6 +16,10 @@ public class ScoreManager : MonoBehaviour
     private void Update(){
         if(keepCounting){
             scoreDisplay.text = score.ToString();
+        }else{
+            //Storage Score
+            if(score > PlayerPrefs.GetInt("HighScore", 0))
+                PlayerPrefs.SetInt("HighScore", score);
         }
     }
     void OnTriggerEnter2D(Collider2D other){        

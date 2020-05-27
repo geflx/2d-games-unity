@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [Header("Player Characteristics")]
     public float moveSpeed = 5f;
     public int kamaboko = 0;
+    public int kamabokoLimit;
 
     [Header("Components")]
     public Rigidbody2D rb;
@@ -34,6 +35,13 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
+
+        if(kamaboko == kamabokoLimit){
+            GetComponent<Health>().health ++;
+            GetComponent<Health>().audio3.Play();
+
+            kamaboko = 0;
+        }
 
         if(GetComponent<Health>().health <= 0){ // Dead in Combat
 
