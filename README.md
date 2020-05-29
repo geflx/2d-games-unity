@@ -1,6 +1,6 @@
-# Game Development - Unity 2D Platform Games
+# Game Development - Unity 2D Games
 
-Little adventures of a begginer game dev in Unity C#!
+Some adventures of a begginer game dev in Unity C#;
 
 ## 1 - Platformer Endless Running Game (Android)
 
