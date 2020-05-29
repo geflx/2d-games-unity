@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
    [Header("Player Info.")]
     public float moveSpeed;
-    public int power = 0;
+    public int power;
     
     [Header("Components")]
     public Rigidbody2D rb;
@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     private float moveInput;
 
     void Start(){
+        power = PlayerPrefs.GetInt("Collectables");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }

@@ -21,9 +21,7 @@ public class PowerUp : MonoBehaviour
             Destroy(gameObject);
 
             if(!touched){
-                if(Player.GetComponent<Player>().power < 2){
                     Player.GetComponent<Player>().power +=1;
-                }
             }
             touched = true;
         }

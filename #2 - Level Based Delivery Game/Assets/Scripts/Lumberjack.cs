@@ -9,9 +9,15 @@ public class Lumberjack : MonoBehaviour
     public float playerDistance;
     public float moveSpeed;
 
+    public float delayToCheck;
+    private float waitingDelay;
+    private int direction;
+
     public bool run = false;
     
     void Start(){
+        direction = -1;
+        waitingDelay = delayToCheck;
         Player =  GameObject.Find("Player");
     }
 
@@ -22,15 +28,31 @@ public class Lumberjack : MonoBehaviour
             run = true;
         }
         
-        if(Player.transform.position.x - gameObject.transform.position.x  > 20 ){
-            Destroy(gameObject);
+        //if(Player.transform.position.x - gameObject.transform.position.x  > 20 )
+            //Destroy(gameObject);
+        
+
+
+        if(waitingDelay > 0){
+            waitingDelay -= Time.deltaTime;
+        }else{
+            if((Player.transform.position.x - gameObject.transform.position.x) < 0)
+                direction = -1;
+            else
+                direction = 1;
+
+            waitingDelay = delayToCheck;
         }
-        Move();
+        
+
+        Move(direction);
     }
 
-    void Move(){
-        if(run){
+    void Move(int direction){
+        if(direction == -1){
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+        }else{
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
     }
 }

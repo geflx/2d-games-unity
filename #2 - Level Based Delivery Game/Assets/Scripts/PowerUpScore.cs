@@ -14,6 +14,7 @@ public class PowerUpScore : MonoBehaviour
     void Update(){
         int power = Player.GetComponent<Player>().power;
         powerDisplay.text = power.ToString();
+        PlayerPrefs.SetInt("Collectables", power);
     }
     
 }
