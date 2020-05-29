@@ -6,10 +6,10 @@ Little adventures of a begginer game dev in Unity C#!
 
 At the beggining of game development in Unity (C#), it was developed an Endless Running style game, Portrait Oriented and avaiable for Android devices. Some of this game's features are:
 - Parallax Effect on scenario;
-- Three different positions obstacles;
-- Score and Health indicators.
+- Moving obstacles and moving enemies!
+- High Score, Main Menu and Restart Page
 
-Runner Sprites source from "naruto saikyou ninja daikesshu 2"
+Characters sprites source: "naruto saikyou ninja daikesshu 2"
 
 #### Development Game Screenshots
 
