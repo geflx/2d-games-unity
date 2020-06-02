@@ -23,6 +23,9 @@ public class Player : MonoBehaviour
     [Header("Move Info.")]
     private float moveInput;
 
+    public Joystick joystick;
+    public bool pcMode;
+
     void Start(){
         power = PlayerPrefs.GetInt("Collectables");
         rb = GetComponent<Rigidbody2D>();
@@ -41,19 +44,7 @@ public class Player : MonoBehaviour
             animator.SetBool("isGrounded", false);
         }
 
-        if(Input.GetKeyDown("space") && extraJumps>0){
-                
-                animator.SetBool("doubleJump", true);
 
-                rb.velocity = Vector2.up * jumpForce;
-                extraJumps--;
-
-        }else if(Input.GetKeyDown("space") && extraJumps==0 && grounded){
-
-                rb.velocity = Vector2.up * jumpForce;            
-        }  
-        
-      
         //Animation
         animator.SetFloat("speed", rb.velocity.x * rb.velocity.x);
         if(rb.velocity.y > 0){
@@ -67,15 +58,52 @@ public class Player : MonoBehaviour
         }else{
             animator.SetBool("goingRight", false);
         }
+        jump();
     }
     void FixedUpdate(){
         moveHorizontal();   
     }
 
     void moveHorizontal(){
-        moveInput = Input.GetAxis("Horizontal");
+        if(pcMode){
+            moveInput = Input.GetAxis("Horizontal");
+        }else{ 
+            if(joystick.Horizontal >= .2f){ // Controller sensitivity
+                moveInput = 1f; 
+            }else if(joystick.Horizontal <= -.2f){
+                moveInput = -1f;
+            }else{
+                moveInput = 0f;
+            }
+        }
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
     }
 
+    void jump(){
+        if(pcMode){
+            if(Input.GetKeyDown("space") && extraJumps>0){
+
+                    animator.SetBool("doubleJump", true);
+
+                    rb.velocity = Vector2.up * jumpForce;
+                    extraJumps--;
+
+            }else if(Input.GetKeyDown("space") && extraJumps==0 && grounded){
+                    rb.velocity = Vector2.up * jumpForce;            
+            }  
+        }else{
+            float verticalMove = joystick.Vertical;
+
+            if(verticalMove >=.5f && extraJumps>0){
+                    animator.SetBool("doubleJump", true);
+
+                    rb.velocity = Vector2.up * jumpForce;
+                    extraJumps--;
+
+            }else if(verticalMove >=.5f && extraJumps==0 && grounded){
+                    rb.velocity = Vector2.up * jumpForce;            
+            }  
+        }
+    }
 }

@@ -2,11 +2,13 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BonfireScript
+    - CollectablesManager
     - GroundCheck
     - HeadCheck
     - Health
     - Lumberjack
     - MainMenu
+    - ParallaxBackground
     - PauseMenu
     - Player
     - PowerUp
@@ -17,6 +19,7 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineFramingTransposer
     - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachineSameAsFollowTarget
     - Cinemachine.CinemachineVirtualCamera
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -38,8 +41,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -52,6 +57,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
@@ -91,11 +97,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11482}
     - Class: 114
+      Script: {instanceID: 11502}
+    - Class: 114
       Script: {instanceID: 11566}
     - Class: 114
       Script: {instanceID: 11840}
     - Class: 114
       Script: {instanceID: 11926}
+    - Class: 114
+      Script: {instanceID: 12146}
     - Class: 114
       Script: {instanceID: 12158}
     - Class: 114
@@ -113,27 +123,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 13462}
+      Script: {instanceID: 13348}
     - Class: 114
-      Script: {instanceID: 13498}
+      Script: {instanceID: 13464}
     - Class: 114
-      Script: {instanceID: 13568}
+      Script: {instanceID: 13500}
     - Class: 114
-      Script: {instanceID: 13838}
+      Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 13948}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14070}
+      Script: {instanceID: 13950}
     - Class: 114
-      Script: {instanceID: 14190}
+      Script: {instanceID: 14072}
     - Class: 114
-      Script: {instanceID: 14560}
+      Script: {instanceID: 14192}
     - Class: 114
-      Script: {instanceID: 14566}
+      Script: {instanceID: 14536}
     - Class: 114
-      Script: {instanceID: 14620}
+      Script: {instanceID: 14564}
     - Class: 114
-      Script: {instanceID: 14668}
+      Script: {instanceID: 14570}
+    - Class: 114
+      Script: {instanceID: 14624}
+    - Class: 114
+      Script: {instanceID: 14672}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,25 +196,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11666}
     - Class: 114
+      Script: {instanceID: 12146}
+    - Class: 114
       Script: {instanceID: 12282}
     - Class: 114
       Script: {instanceID: 12344}
     - Class: 114
       Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 13462}
+      Script: {instanceID: 13212}
     - Class: 114
-      Script: {instanceID: 13482}
+      Script: {instanceID: 13464}
     - Class: 114
-      Script: {instanceID: 13838}
+      Script: {instanceID: 13484}
     - Class: 114
-      Script: {instanceID: 13948}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14258}
+      Script: {instanceID: 13950}
     - Class: 114
-      Script: {instanceID: 14438}
+      Script: {instanceID: 14260}
     - Class: 114
-      Script: {instanceID: 14620}
+      Script: {instanceID: 14440}
+    - Class: 114
+      Script: {instanceID: 14624}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -724,6 +742,12 @@ ScriptsOnlyBuild:
     className: CinemachineTargetGroup
   - hash:
       serializedVersion: 2
+      Hash: f4e7351c61a1907d1502badc461249f4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollectablesManager
+  - hash:
+      serializedVersion: 2
       Hash: e244702e0dc05782229aa524e4d757f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1036,7 +1060,7 @@ ScriptsOnlyBuild:
     className: VertexZoom
   - hash:
       serializedVersion: 2
-      Hash: 85f022b1e57a395a4890c57b45c20967
+      Hash: cf019bfb6c985106a58a1a4f660ba30e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Lumberjack
@@ -1118,6 +1142,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 561dbc635b78e0d712da2adcfb8e57d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParallaxBackground
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
