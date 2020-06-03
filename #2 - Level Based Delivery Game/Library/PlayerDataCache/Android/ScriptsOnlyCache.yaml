@@ -1,9 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-firstpass.dll:
+    - UnityStandardAssets.CrossPlatformInput.ButtonHandler
     Assembly-CSharp.dll:
     - BonfireScript
     - CollectablesManager
     - FixedJoystick
+    - Floating
     - GroundCheck
     - HeadCheck
     - Health
@@ -15,6 +18,7 @@ ScriptsOnlyBuild:
     - PowerUp
     - PowerUpScore
     - ProgressBar
+    - Shake
     - TouchCheck
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -42,10 +46,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -53,6 +55,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -94,63 +97,69 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11194}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 11926}
-    - Class: 114
-      Script: {instanceID: 12146}
+      Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12170}
     - Class: 114
-      Script: {instanceID: 12320}
+      Script: {instanceID: 12294}
     - Class: 114
-      Script: {instanceID: 12372}
+      Script: {instanceID: 12332}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 12790}
+      Script: {instanceID: 12630}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 12812}
     - Class: 114
-      Script: {instanceID: 13348}
+      Script: {instanceID: 12918}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 13500}
+      Script: {instanceID: 13374}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 13492}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 13530}
     - Class: 114
-      Script: {instanceID: 13950}
+      Script: {instanceID: 13602}
     - Class: 114
-      Script: {instanceID: 14072}
+      Script: {instanceID: 13610}
     - Class: 114
-      Script: {instanceID: 14192}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 14536}
+      Script: {instanceID: 13986}
     - Class: 114
-      Script: {instanceID: 14564}
+      Script: {instanceID: 14110}
     - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14232}
     - Class: 114
-      Script: {instanceID: 14624}
+      Script: {instanceID: 14578}
     - Class: 114
-      Script: {instanceID: 14672}
+      Script: {instanceID: 14590}
     - Class: 114
-      Script: {instanceID: 32274}
+      Script: {instanceID: 14606}
+    - Class: 114
+      Script: {instanceID: 14612}
+    - Class: 114
+      Script: {instanceID: 14670}
+    - Class: 114
+      Script: {instanceID: 14702}
+    - Class: 114
+      Script: {instanceID: 14720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,42 +195,48 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11194}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11666}
+      Script: {instanceID: 11674}
     - Class: 114
-      Script: {instanceID: 12146}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12294}
     - Class: 114
-      Script: {instanceID: 12344}
+      Script: {instanceID: 12356}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 13212}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 13492}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13512}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 13950}
+      Script: {instanceID: 13986}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 14300}
     - Class: 114
-      Script: {instanceID: 14440}
+      Script: {instanceID: 14482}
     - Class: 114
-      Script: {instanceID: 14624}
+      Script: {instanceID: 14670}
+    - Class: 114
+      Script: {instanceID: 20250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -239,6 +254,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -367,6 +388,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 352455aaadb8c98ff36ead557753abfa
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TiltInput
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -419,6 +446,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
   - hash:
       serializedVersion: 2
       Hash: de3b64f1e17b5aeaad8f063456525030
@@ -607,10 +640,34 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+      Hash: a8b6c919b2049fcc280823488144371f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: Joystick
+  - hash:
+      serializedVersion: 2
       Hash: 380d3ba99e2d836ad5d66bded133d128
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePOV
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: InputAxisScrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: fdd7177da17032ba94d98037cc97bb49
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: AxisTouchButton
   - hash:
       serializedVersion: 2
       Hash: c5bbf544e94ecf754c0292c2cc63e108
@@ -641,6 +698,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineTriggerAction
+  - hash:
+      serializedVersion: 2
+      Hash: c88c4199b288356ec3eb2f0d85abc619
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: ButtonHandler
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -701,6 +764,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePipeline
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: MobileControlRig
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -901,6 +970,12 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 1e3d6222ff533d213aab144eb854a53b
     assemblyName: Cinemachine.dll
     namespaceName: 
@@ -911,6 +986,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineVirtualCamera
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -991,6 +1072,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
+  - hash:
+      serializedVersion: 2
       Hash: 8a874a8207a7664bdf44e61f28717254
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1037,6 +1124,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PowerUp
+  - hash:
+      serializedVersion: 2
+      Hash: 219ec6059796d8951d2adcd8505d0dc2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TouchPad
   - hash:
       serializedVersion: 2
       Hash: 5bb0c23ac2810973880e592724a69354
@@ -1201,6 +1294,12 @@ ScriptsOnlyBuild:
     className: CinemachineHardLockToTarget
   - hash:
       serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1223,6 +1322,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 4224ab4de7d9043c4f7f9354947c0c68
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Floating
   - hash:
       serializedVersion: 2
       Hash: 2792936179724025482dc04d68a47ca7
@@ -1249,49 +1354,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
+      Hash: 997994679f0af4ced35578e72cacee6c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 9e27f44bbf48228f203a37254d40f8ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickSetterExample
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FloatingJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 824e8d4cb47ffd88ddf959dbd4526585
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DynamicJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FixedJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 528e9858840cb8370d93939fff6b42d9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickPlayerExample
-  - hash:
-      serializedVersion: 2
-      Hash: 9dac16f3efc511835ac976dfae55f580
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VariableJoystick
+    className: Shake
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Gameplay.unity
-  playerPath: C:/Users/Gabriel/Documents/Github/Unity2DGames/#2 - Level Based Delivery
-    Game/Versions/Android v0.apk
+  playerPath: C:/Users/Gabriel/Documents/Github/Unity-2D-Games/#2 - Level Based Delivery
+    Game/Versions/Gas Guy Delivery Game v0.1.apk

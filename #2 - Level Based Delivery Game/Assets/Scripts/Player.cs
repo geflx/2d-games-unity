@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
@@ -95,13 +96,13 @@ public class Player : MonoBehaviour
         }else{
             float verticalMove = joystick.Vertical;
 
-            if(verticalMove >=.5f && extraJumps>0){
+            if(CrossPlatformInputManager.GetButtonDown("Jump") && extraJumps>0){
                     animator.SetBool("doubleJump", true);
 
                     rb.velocity = Vector2.up * jumpForce;
                     extraJumps--;
 
-            }else if(verticalMove >=.5f && extraJumps==0 && grounded){
+            }else if(CrossPlatformInputManager.GetButtonDown("Jump")  && extraJumps==0 && grounded){
                     rb.velocity = Vector2.up * jumpForce;            
             }  
         }
