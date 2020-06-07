@@ -129,37 +129,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 13530}
+      Script: {instanceID: 13532}
     - Class: 114
-      Script: {instanceID: 13602}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13610}
+      Script: {instanceID: 13612}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 13986}
+      Script: {instanceID: 13988}
     - Class: 114
-      Script: {instanceID: 14110}
+      Script: {instanceID: 14112}
     - Class: 114
-      Script: {instanceID: 14232}
+      Script: {instanceID: 14234}
     - Class: 114
-      Script: {instanceID: 14578}
+      Script: {instanceID: 14580}
     - Class: 114
-      Script: {instanceID: 14590}
+      Script: {instanceID: 14592}
     - Class: 114
-      Script: {instanceID: 14606}
+      Script: {instanceID: 14608}
     - Class: 114
-      Script: {instanceID: 14612}
+      Script: {instanceID: 14614}
     - Class: 114
-      Script: {instanceID: 14670}
+      Script: {instanceID: 14672}
     - Class: 114
-      Script: {instanceID: 14702}
+      Script: {instanceID: 14704}
     - Class: 114
-      Script: {instanceID: 14720}
+      Script: {instanceID: 14722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -222,21 +222,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 13512}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 13514}
     - Class: 114
-      Script: {instanceID: 13986}
+      Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 14300}
+      Script: {instanceID: 13988}
     - Class: 114
-      Script: {instanceID: 14482}
+      Script: {instanceID: 14302}
     - Class: 114
-      Script: {instanceID: 14670}
+      Script: {instanceID: 14484}
     - Class: 114
-      Script: {instanceID: 20250}
+      Script: {instanceID: 14672}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -244,6 +244,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -838,6 +840,12 @@ ScriptsOnlyBuild:
     className: CinemachineTransposer
   - hash:
       serializedVersion: 2
+      Hash: 997994679f0af4ced35578e72cacee6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shake
+  - hash:
+      serializedVersion: 2
       Hash: a66794b62dbf044668a5f102bb7908c2
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1352,15 +1360,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 997994679f0af4ced35578e72cacee6c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Shake
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Gameplay.unity
   playerPath: C:/Users/Gabriel/Documents/Github/Unity-2D-Games/#2 - Level Based Delivery
-    Game/Versions/Gas Guy Delivery Game v0.1.apk
+    Game/Versions/Gas Delivery v0.2.apk

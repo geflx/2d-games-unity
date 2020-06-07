@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -16,6 +17,13 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+        if(CrossPlatformInputManager.GetButtonDown("Pause")){
+            if(gameIsPaused){
+                Resume();
+            }else{
+                Pause();
+            }
+        }
     }
 
     public void Resume(){
@@ -24,7 +32,7 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = false;
     }
 
-    void Pause(){
+    public void Pause(){
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
