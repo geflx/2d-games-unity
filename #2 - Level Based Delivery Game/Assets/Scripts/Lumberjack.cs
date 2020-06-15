@@ -32,20 +32,20 @@ public class Lumberjack : MonoBehaviour
             //Destroy(gameObject);
         
 
+        if(run){
+            if(waitingDelay > 0){
+                waitingDelay -= Time.deltaTime;
+            }else{
+                if((Player.transform.position.x - gameObject.transform.position.x) < 0)
+                    direction = -1;
+                else
+                    direction = 1;
 
-        if(waitingDelay > 0){
-            waitingDelay -= Time.deltaTime;
-        }else{
-            if((Player.transform.position.x - gameObject.transform.position.x) < 0)
-                direction = -1;
-            else
-                direction = 1;
-
-            waitingDelay = delayToCheck;
+                waitingDelay = delayToCheck;
+            }
+            Move(direction);
         }
-        
-
-        Move(direction);
+       
     }
 
     void Move(int direction){
