@@ -48,6 +48,15 @@ public class Lumberjack : MonoBehaviour
        
     }
 
+    void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.tag != "Player"){
+            if(direction == -1)
+                direction = 1;
+            else 
+                direction = -1;
+        }
+    }
+
     void Move(int direction){
         if(direction == -1){
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
