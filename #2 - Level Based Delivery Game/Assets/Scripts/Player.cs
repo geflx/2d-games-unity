@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
    [Header("Player Info.")]
     public float moveSpeed;
     public int power;
+    public int coins;
     
     [Header("Components")]
     public Rigidbody2D rb;
@@ -28,7 +29,10 @@ public class Player : MonoBehaviour
     public bool pcMode;
 
     void Start(){
+
+        coins = 0;
         power = PlayerPrefs.GetInt("Collectables");
+        
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
