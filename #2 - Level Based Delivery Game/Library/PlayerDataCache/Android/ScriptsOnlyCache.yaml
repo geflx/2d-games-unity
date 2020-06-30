@@ -181,53 +181,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13586}
     - Class: 114
-      Script: {instanceID: 13720}
+      Script: {instanceID: 13680}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13722}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 13864}
     - Class: 114
-      Script: {instanceID: 14480}
+      Script: {instanceID: 14108}
     - Class: 114
-      Script: {instanceID: 14642}
+      Script: {instanceID: 14482}
     - Class: 114
-      Script: {instanceID: 14690}
+      Script: {instanceID: 14644}
     - Class: 114
-      Script: {instanceID: 14790}
+      Script: {instanceID: 14692}
     - Class: 114
-      Script: {instanceID: 14802}
+      Script: {instanceID: 14792}
     - Class: 114
-      Script: {instanceID: 15194}
+      Script: {instanceID: 14804}
     - Class: 114
-      Script: {instanceID: 15358}
+      Script: {instanceID: 14918}
     - Class: 114
-      Script: {instanceID: 15546}
+      Script: {instanceID: 15198}
     - Class: 114
-      Script: {instanceID: 15720}
+      Script: {instanceID: 15362}
     - Class: 114
-      Script: {instanceID: 15990}
+      Script: {instanceID: 15550}
     - Class: 114
-      Script: {instanceID: 16134}
+      Script: {instanceID: 15724}
     - Class: 114
-      Script: {instanceID: 16274}
+      Script: {instanceID: 15996}
     - Class: 114
-      Script: {instanceID: 16286}
+      Script: {instanceID: 16140}
     - Class: 114
-      Script: {instanceID: 16312}
+      Script: {instanceID: 16280}
     - Class: 114
-      Script: {instanceID: 16320}
+      Script: {instanceID: 16292}
     - Class: 114
-      Script: {instanceID: 16406}
+      Script: {instanceID: 16318}
     - Class: 114
-      Script: {instanceID: 16452}
+      Script: {instanceID: 16326}
     - Class: 114
-      Script: {instanceID: 16480}
+      Script: {instanceID: 16412}
     - Class: 114
-      Script: {instanceID: 40436}
+      Script: {instanceID: 16458}
     - Class: 114
-      Script: {instanceID: 76632}
+      Script: {instanceID: 16486}
     - Class: 114
-      Script: {instanceID: 84934}
+      Script: {instanceID: 16570}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,6 +245,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 251
       Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -312,65 +314,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13534}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13694}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 14108}
     - Class: 114
-      Script: {instanceID: 14140}
+      Script: {instanceID: 14142}
     - Class: 114
-      Script: {instanceID: 14284}
+      Script: {instanceID: 14286}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 14334}
     - Class: 114
-      Script: {instanceID: 14388}
+      Script: {instanceID: 14390}
     - Class: 114
-      Script: {instanceID: 14548}
+      Script: {instanceID: 14550}
     - Class: 114
-      Script: {instanceID: 14638}
+      Script: {instanceID: 14640}
     - Class: 114
-      Script: {instanceID: 14642}
+      Script: {instanceID: 14644}
     - Class: 114
-      Script: {instanceID: 14664}
+      Script: {instanceID: 14666}
     - Class: 114
-      Script: {instanceID: 14670}
+      Script: {instanceID: 14672}
     - Class: 114
-      Script: {instanceID: 14844}
+      Script: {instanceID: 14846}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 14894}
     - Class: 114
-      Script: {instanceID: 14904}
+      Script: {instanceID: 14906}
     - Class: 114
-      Script: {instanceID: 15194}
+      Script: {instanceID: 15198}
     - Class: 114
-      Script: {instanceID: 15338}
+      Script: {instanceID: 15342}
     - Class: 114
-      Script: {instanceID: 15358}
+      Script: {instanceID: 15362}
     - Class: 114
-      Script: {instanceID: 15436}
+      Script: {instanceID: 15440}
     - Class: 114
-      Script: {instanceID: 15778}
+      Script: {instanceID: 15784}
     - Class: 114
-      Script: {instanceID: 15842}
+      Script: {instanceID: 15848}
     - Class: 114
-      Script: {instanceID: 16022}
+      Script: {instanceID: 16028}
     - Class: 114
-      Script: {instanceID: 16080}
+      Script: {instanceID: 16086}
     - Class: 114
-      Script: {instanceID: 16134}
+      Script: {instanceID: 16140}
     - Class: 114
-      Script: {instanceID: 16352}
+      Script: {instanceID: 16358}
     - Class: 114
-      Script: {instanceID: 16356}
+      Script: {instanceID: 16362}
     - Class: 114
-      Script: {instanceID: 16406}
+      Script: {instanceID: 16412}
     - Class: 114
-      Script: {instanceID: 16436}
+      Script: {instanceID: 16442}
     - Class: 114
-      Script: {instanceID: 16438}
+      Script: {instanceID: 16444}
     - Class: 114
-      Script: {instanceID: 16586}
+      Script: {instanceID: 16594}
     - Class: 114
-      Script: {instanceID: 16592}
+      Script: {instanceID: 16600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1004,6 +1006,12 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: 678edf76aa59f67dbb4b29c24fd02d14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenLimiter
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -1130,7 +1138,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerWidget
   - hash:
       serializedVersion: 2
-      Hash: f4e7351c61a1907d1502badc461249f4
+      Hash: b3bfb6c4f624c0ef45e8c86ea6ecbe2d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollectablesManager
@@ -1382,6 +1390,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerButton
   - hash:
       serializedVersion: 2
+      Hash: a8d0baafa6a09ed75017e2f2430d0e08
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinScore
+  - hash:
+      serializedVersion: 2
       Hash: 597cfde2e60b842b3acbd2961ff0631b
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1590,6 +1604,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Lumberjack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlinkIndicator
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1862,6 +1882,12 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
+      Hash: 3014372b9e09059ac6cc3eb83342f743
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rotate
+  - hash:
+      serializedVersion: 2
       Hash: 8b8b18ce5ce466450710494b38db41e5
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1884,33 +1910,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 3014372b9e09059ac6cc3eb83342f743
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rotate
-  - hash:
-      serializedVersion: 2
-      Hash: a8d0baafa6a09ed75017e2f2430d0e08
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CoinScore
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlinkIndicator
-  - hash:
-      serializedVersion: 2
-      Hash: 678edf76aa59f67dbb4b29c24fd02d14
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScreenLimiter
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Gameplay.unity
   playerPath: C:/Users/Gabriel/Documents/Github/Unity-2D-Games/#2 - Level Based Delivery
-    Game/Versions/Gas Delivery v0.4.apk
+    Game/Versions/Gas Delivery v0.41.apk
