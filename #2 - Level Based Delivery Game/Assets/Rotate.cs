@@ -7,12 +7,14 @@ public class Rotate : MonoBehaviour
     public float maxHeight;
     public float floatSpeed;
 
-    private bool goRight;
     private Vector3 startPos;
 
     public AudioSource sound;
     public Collider2D myCollider;
     public SpriteRenderer mySprite, myShadow;
+
+    private bool active;
+    private float timer;
 
     void Start(){
 
@@ -21,13 +23,28 @@ public class Rotate : MonoBehaviour
         mySprite.enabled = true;
         myShadow.enabled = true;
 
-        goRight = true;
+        active = true;
+        timer = 0.0f;
+
         startPos = transform.position;
         GameObject.Find("Sound");
     }
-    
+  
     private void Update(){
-        transform.Rotate(0f, floatSpeed,  0f );
+
+        if(!active){
+            if(timer < 0.1f){
+                timer = 3.0f;
+            }else if(timer < 0.5f){
+                Destroy(gameObject); // * Destroy Coin after 2.5s 
+            }else{
+                timer -= Time.deltaTime;
+            }
+        }
+
+        if(active){
+            transform.Rotate(0f, floatSpeed,  0f );
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other){
@@ -40,8 +57,7 @@ public class Rotate : MonoBehaviour
             myShadow.enabled = false;
             mySprite.enabled = false;
 
-            // TODO Destroy object after one second!
-            //Destroy(gameObject); // * Destroy Obstacle when touch Player;
+            active = false;
         }
     }
 }
