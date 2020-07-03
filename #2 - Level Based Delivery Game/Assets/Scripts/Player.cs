@@ -50,6 +50,10 @@ public class Player : MonoBehaviour
         }
 
 
+        if(rb.velocity.y == 0){
+            grounded = true;
+        }
+
         //Animation
         animator.SetFloat("speed", rb.velocity.x * rb.velocity.x);
         if(rb.velocity.y > 0){
