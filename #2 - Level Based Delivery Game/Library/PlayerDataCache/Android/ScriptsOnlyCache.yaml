@@ -15,17 +15,19 @@ ScriptsOnlyBuild:
     - HeadCheck
     - Health
     - Indicator
+    - LeftDelimiterUpdate
     - Lumberjack
     - MainMenu
     - ParallaxBackground
+    - ParallaxBg2
     - PauseMenu
     - Player
     - PowerUp
     - PowerUpScore
     - ProgressBar
     - Rotate
-    - ScreenLimiter
     - Shake
+    - SinalizeToDelimiter
     - Sound
     - TouchCheck
     Cinemachine.dll:
@@ -36,6 +38,8 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    Unity.2D.SpriteShape.Editor.dll:
+    - UnityEditor.U2D.SpriteShapeEditorAnalytics
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -85,12 +89,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -164,6 +171,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12424}
     - Class: 114
+      Script: {instanceID: 12452}
+    - Class: 114
       Script: {instanceID: 12602}
     - Class: 114
       Script: {instanceID: 12732}
@@ -183,8 +192,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13458}
     - Class: 114
       Script: {instanceID: 13588}
-    - Class: 114
-      Script: {instanceID: 13682}
     - Class: 114
       Script: {instanceID: 13724}
     - Class: 114
@@ -235,6 +242,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16574}
     - Class: 114
       Script: {instanceID: 16594}
+    - Class: 114
+      Script: {instanceID: 37882}
+    - Class: 114
+      Script: {instanceID: 99870}
+    - Class: 114
+      Script: {instanceID: 100610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1933,9 +1946,27 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e9f7cb7e28942ba279e891a770326a3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParallaxBg2
+  - hash:
+      serializedVersion: 2
+      Hash: dfcee782a05a53780be3475ff5135b66
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SinalizeToDelimiter
+  - hash:
+      serializedVersion: 2
+      Hash: 9e0b20bc630eb710f92a73d05d6d63d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeftDelimiterUpdate
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Gameplay.unity
   playerPath: C:/Users/Gabriel/Documents/Github/Unity-2D-Games/#2 - Level Based Delivery
-    Game/Versions/Gas Delivery v0.5.apk
+    Game/Versions/Gas Delivery v0.6.apk
