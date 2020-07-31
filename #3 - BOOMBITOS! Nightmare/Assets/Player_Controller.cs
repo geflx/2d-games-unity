@@ -9,6 +9,8 @@ public class Player_Controller : MonoBehaviour
     private float movingValue;
     private Rigidbody2D rigidBody;
 
+    public GameObject bomb;
+
     [Header("Move Info.")]
     public float movingX, movingY;
 
@@ -19,6 +21,7 @@ public class Player_Controller : MonoBehaviour
     }
     void Update(){
         move();   
+        throwBomb();
     }
 
     void move(){
@@ -26,10 +29,22 @@ public class Player_Controller : MonoBehaviour
         movingX = Input.GetAxis("Horizontal");
         movingY = Input.GetAxis("Vertical");
 
-        //rigidBody.velocity = new Vector2(movingX * moveSpeed, rigidBody.velocity.x);
-       // rigidBody.velocity = new Vector2(movingY * moveSpeed, rigidBody.velocity.y);
-        rigidBody.velocity = new Vector2(movingX * moveSpeed, movingY * moveSpeed);
-    
+        //rigidBody.velocity = new Vector2(movingX * moveSpeed, movingY * moveSpeed);   
+        transform.Translate(movingX * moveSpeed, movingY * moveSpeed, 0);
+
+    }
+
+    void throwBomb(){
+
+        if(Input.GetKeyDown("space")) {
+
+            float x, y, z;
+            x = transform.position.x;
+            y = transform.position.y;
+            z = transform.position.z;
+
+            Instantiate(bomb, new Vector3(x, y, z), Quaternion.identity);
+        }
     }
   
 }
