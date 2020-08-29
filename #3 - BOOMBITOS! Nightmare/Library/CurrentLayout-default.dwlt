@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 203
+    x: 201
     y: 0
-    width: 1243
+    width: 1245
     height: 676
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -74,10 +74,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 94
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,7 +121,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 203
+    width: 201
     height: 676
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 142
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 113
+  controlID: 143
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,9 +325,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 203
+    x: 201
     y: 73
-    width: 1241
+    width: 1243
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
@@ -389,9 +389,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 203
+    x: 201
     y: 73
-    width: 1241
+    width: 1243
     height: 655
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
@@ -433,11 +433,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Objects/Wall
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 92
   m_LastFolders:
-  - Assets/Sprites/Objects/Wall
+  - Assets
   m_LastFoldersGridSize: 92
   m_LastProjectPath: C:\Users\Gabriel\Documents\Github\Unity-2D-Games\#3 - BOOMBITOS!
     Nightmare
@@ -445,23 +445,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a390000
-    m_LastClickedID: 14714
-    m_ExpandedIDs: 00000000683900006a3900006c3900007839000000ca9a3b
+    m_SelectedIDs: 343a0000
+    m_LastClickedID: 14900
+    m_ExpandedIDs: 00000000343a0000363a0000383a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Objects
-      m_OriginalName: Objects
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 14712
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -475,7 +475,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000683900006a3900006c390000
+    m_ExpandedIDs: 00000000343a0000363a0000383a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,8 +502,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000acf7ffffe2450000004400005c4c000000000000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000acf7ffffe2450000004400005c4c0000023a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,29 +592,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 202
+    width: 200
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8c3c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 84faffff
+      m_SelectedIDs: c2520000
+      m_LastClickedID: 21186
+      m_ExpandedIDs: c8c3ffffdcc3ffff8ac4ffffc4d0ffffd8d0ffff8ed1ffff6afbfffff23800005a520000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: LighPole
-        m_OriginalName: LighPole
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -2068
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -645,9 +645,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 203
+    x: 201
     y: 73
-    width: 1241
+    width: 1243
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -660,9 +660,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.2535853, y: 2.0506113, z: -144.80067}
+    m_Target: {x: -0.23748335, y: 0.45191196, z: -28.692383}
     speed: 2
-    m_Value: {x: -3.2535853, y: 2.0506113, z: -144.80067}
+    m_Value: {x: -0.23748335, y: 0.45191196, z: -28.692383}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -712,9 +712,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.6196158
+    m_Target: 6.065889
     speed: 2
-    m_Value: 2.6196158
+    m_Value: 6.351716
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -760,9 +760,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 203
+    x: 201
     y: 73
-    width: 1241
+    width: 1243
     height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -808,23 +808,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1241
+      width: 1243
       height: 634
-    m_Scale: {x: 1.0868956, y: 1.0868956}
-    m_Translation: {x: 620.5, y: 330.51044}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 621.5, y: 317}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -570.892
-      y: -304.08664
-      width: 1141.784
-      height: 583.3127
+      x: -621.5
+      y: -317
+      width: 1243
+      height: 634
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1241, y: 655}
+  m_LastWindowPixelSize: {x: 1243, y: 655}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
