@@ -8,6 +8,7 @@ TagManager:
   - Fire
   - Enemy
   - Coin
+  - Spring
   layers:
   - Default
   - TransparentFX

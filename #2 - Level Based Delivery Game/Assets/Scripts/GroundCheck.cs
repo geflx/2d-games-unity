@@ -17,6 +17,11 @@ public class GroundCheck : MonoBehaviour
 
             Player.GetComponent<Player>().grounded = true;
 
+        }else if(collision.collider.tag == "Spring"){
+
+            Debug.Log("yeah... spring!");
+            Player.GetComponent<Player>().springJump = true;
+
         }
     }
     private void OnCollisionExit2D(Collision2D collision){

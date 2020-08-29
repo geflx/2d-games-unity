@@ -17,10 +17,8 @@ public class Player : MonoBehaviour
     
 
     [Header("Jump Info.")]
-    public bool grounded = false;
-    public float jumpForce = 5;
-    public float extraJumpsValue = 1;
-    public float extraJumps;
+    public bool grounded = false, springJump = false;
+    public float jumpForce = 5, extraJumpsValue = 1, extraJumps;
 
     [Header("Move Info.")]
     private float moveInput;
@@ -49,6 +47,12 @@ public class Player : MonoBehaviour
             animator.SetBool("isGrounded", false);
         }
 
+        if(springJump){
+            rb.velocity = Vector2.up * jumpForce * 1.7f;  
+            grounded = false;
+            extraJumps = 0;
+            springJump = false;
+        }
 
         if(rb.velocity.y == 0){
             grounded = true;

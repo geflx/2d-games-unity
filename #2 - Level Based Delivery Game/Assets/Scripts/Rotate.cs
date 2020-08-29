@@ -35,7 +35,6 @@ public class Rotate : MonoBehaviour
             if(timer < 0.1f){
                 timer = 3.0f;
             }else if(timer < 0.5f){
-                Debug.Log("Vou explodir...");
                 Destroy(gameObject); // * Destroy Coin after 2.5s 
             }else{
                 timer -= Time.deltaTime;
@@ -43,14 +42,12 @@ public class Rotate : MonoBehaviour
         }
 
         if(active){
-            Debug.Log("Deveria rodar...");
             transform.Rotate(0f, floatSpeed,  0f );
         }
     }
 
     void OnTriggerEnter2D(Collider2D other){
 
-        Debug.Log("Colidi...");
         if(other.CompareTag("Player")){
 
             other.GetComponent<Player>().coins++;
