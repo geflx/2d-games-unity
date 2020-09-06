@@ -8,7 +8,7 @@ A 2D Endless Run game was my first choice to learn about game development in Uni
 I had a lot of fun implementing and testing this game, and had a great feedback from users.
 The main objective is to survive the maximum waves possible, using escape and survivor strategies. Developed for Android devices.
 
-OBS: Characters's sprites are from fans of the anime Naruto. Due to copyright settings, only scripts will be available in the repository.
+OBS: Characters's sprites are from Naruto fans (http://www.narutohq.com/sprites.php).
 
 Features:
 - Parallax Effect on scenario;
