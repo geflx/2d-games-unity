@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     [Header("Jump Info.")]
     public bool grounded = false, springJump = false;
     public float jumpForce = 5, extraJumpsValue = 1, extraJumps;
+    public float springJumpMultiplier;
 
     [Header("Move Info.")]
     private float moveInput;
@@ -48,7 +49,7 @@ public class Player : MonoBehaviour
         }
 
         if(springJump){
-            rb.velocity = Vector2.up * jumpForce * 1.7f;  
+            rb.velocity = Vector2.up * jumpForce * springJumpMultiplier;  
             grounded = false;
             extraJumps = 0;
             springJump = false;
