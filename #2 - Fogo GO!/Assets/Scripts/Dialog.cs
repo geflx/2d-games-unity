@@ -7,15 +7,10 @@ public class Dialog : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
-    private int index;
+    public int index;
 
-    public float typingSpeed;
-    public float firstCountdown = 2.0f;
-
-    public GameObject continueButton;
-    public GameObject soundManager;
-    public GameObject indicatorManager;
-    public GameObject dialogImages;
+    public float typingSpeed, firstCountdown = 2.0f;
+    public GameObject continueButton, soundManager, indicatorManager, dialogImages;
 
     public bool runningDialog;
 
@@ -39,7 +34,9 @@ public class Dialog : MonoBehaviour
             indicatorManager.GetComponent<Indicator>().active = true;
             dialogImages.SetActive(false);
 
-            runningDialog = false;
+            //runningDialog = false;
+            Destroy(gameObject);
+            index = 0;
         }
     }
 
