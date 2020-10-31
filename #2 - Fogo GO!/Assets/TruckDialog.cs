@@ -5,7 +5,7 @@ using UnityEngine;
 public class TruckDialog : MonoBehaviour
 {
     public float startCountdown;
-    public bool runDialog;
+    private bool runDialog;
     public GameObject DialogManager, DialogCanvas, indicators, buttons;
     public BoxCollider2D boxC;
 
@@ -18,9 +18,12 @@ public class TruckDialog : MonoBehaviour
         if(runDialog && startCountdown > 0.0f){
         	startCountdown -= Time.deltaTime;
         }else if(runDialog && startCountdown <= 0.0f){
+
+            DialogManager.GetComponent<Dialog>().runningDialog = true;
+
             DialogManager.SetActive(true);
             DialogCanvas.SetActive(true);
-            indicators.SetActive(true);
+            indicators.SetActive(false);
             buttons.SetActive(true);
 
         	runDialog = false;

@@ -10,7 +10,7 @@ public class Dialog : MonoBehaviour
     public int index;
 
     public float typingSpeed, firstCountdown = 2.0f;
-    public GameObject continueButton, soundManager, indicatorManager, dialogImages;
+    public GameObject continueButton, soundManager, indicatorManager, dialogImages, ThisDialog;
 
     public bool runningDialog;
 
@@ -22,21 +22,25 @@ public class Dialog : MonoBehaviour
     }
 
     void Update(){
-        
+        Debug.Log("Index is: " + index + ", sentences length: " + sentences.Length + " Sentences[1] is: " + sentences[1]);
         if(textDisplay.text == sentences[index] && !continueButton.activeSelf){
             continueButton.SetActive(true);
         }
 
-        //Stop playing thriller music and start gameplay
-        if(textDisplay.text == "" && index == sentences.Length-1 && runningDialog){
-            Debug.Log("Ending dialog...");
-            soundManager.GetComponent<Sound>().gameplay = true;
+        // Indicators On/Off.
+        if(runningDialog)
+            indicatorManager.GetComponent<Indicator>().active = false;
+        else
             indicatorManager.GetComponent<Indicator>().active = true;
+        
+        // Stop playing thriller music and start gameplay.
+        if(textDisplay.text == "" && index == sentences.Length-1 && runningDialog){
+            soundManager.GetComponent<Sound>().gameplay = true;
             dialogImages.SetActive(false);
 
-            //runningDialog = false;
-            Destroy(gameObject);
+            runningDialog = false;
             index = 0;
+            ThisDialog.SetActive(false);
         }
     }
 
