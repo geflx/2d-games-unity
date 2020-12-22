@@ -1,8 +1,8 @@
 # Ninja Run - Android 2D Game :video_game::running:
 
-Ninja Run is a 2D endless running game and it was my first theme choice to learn about game development in Unity. 
-I had a lot of fun implementing and testing this game, and received a great feedback from users.
-The main objective is to survive the maximum shuriken/attacks waves possible, using jump button to scape and survive them.
+Ninja Run is a 2D endless running game and it was my first theme choice to learn about game development in Unity.    
+The **main objective** is to survive the maximum shuriken/attacks waves possible, using **jump button**(clicking at the mid-upper screen space) to scape and survive them.  
+I had a lot of fun developing and testing this game, and hope you will have fun playing it. For the record, the **known highscore** is 990 points.  
 
 PS: Characters's sprites are from Naruto fans (http://www.narutohq.com/sprites.php).
 
