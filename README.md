@@ -1,22 +1,23 @@
-# Game Development - Unity 2D Games
+# Ninja Run - Android 2D Game :video_game::running:
 
-Some adventures of a begginer game dev in Unity C#;
+Ninja Run is a 2D endless running game and it was my first theme choice to learn about game development in Unity. 
+I had a lot of fun implementing and testing this game, and received a great feedback from users.
+The main objective is to survive the maximum shuriken/attacks waves possible, using jump button to scape and survive them.
 
-## 1 - Ninja Run (Android)
+PS: Characters's sprites are from Naruto fans (http://www.narutohq.com/sprites.php).
 
-A 2D Endless Run game was my first choice to learn about game development in Unity. 
-I had a lot of fun implementing and testing this game, and had a great feedback from users.
-The main objective is to survive the maximum waves possible, using escape and survivor strategies. Developed for Android devices.
+## Features and download link :arrow_down:
 
-OBS: Characters's sprites are from Naruto fans (http://www.narutohq.com/sprites.php).
+You can [download it directly here.](http://abre.ai/ninja-run)  
+Note: This game was developed exclusively to education purposes.
 
 Features:
-- Parallax Effect on scenario;
+- Parallax Effect in background;
 - Moving obstacles and enemies;
 - High Score, Main Menu and Game Over Screen.
 
-#### Game Overview:
 
+## Game Scenes :movie_camera:
 <table>
   <tr>
     <td>Main Menu</td>
@@ -29,7 +30,3 @@ Features:
     <td><img src="readme_attributes/1-current/1-game-over.gif" width=270 height=480></td>
   </tr>
  </table>
-
-## 2 - Platform Level-Based Game (PC/Mac/Linux)
-
-In maintenance..
